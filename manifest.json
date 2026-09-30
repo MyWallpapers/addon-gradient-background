@@ -1,0 +1,51 @@
+{
+  "runtime": "canvas-v1",
+  "name": "Chromatic",
+  "description": "Un dégradé à deux couleurs, avec une direction précise et sans mouvement superflu.",
+  "version": "0.1.0",
+  "entry": "dist/assets/addon.js",
+  "thumbnail": "assets/thumbnail.png",
+  "deviceSettingsVersion": "1",
+  "ui": {
+    "pointerEvents": "none"
+  },
+  "settings": [
+    {
+      "id": "from",
+      "type": "color",
+      "label": "Première couleur",
+      "default": "#111719"
+    },
+    {
+      "id": "to",
+      "type": "color",
+      "label": "Seconde couleur",
+      "default": "#435556"
+    },
+    {
+      "id": "angle",
+      "type": "range",
+      "label": "Direction",
+      "default": 135,
+      "min": 0,
+      "max": 360,
+      "step": 1
+    },
+    {
+      "id": "geometry",
+      "type": "select",
+      "label": "Géométrie",
+      "default": "linear",
+      "options": [
+        {
+          "value": "linear",
+          "label": "Linéaire"
+        },
+        {
+          "value": "radial",
+          "label": "Radial"
+        }
+      ]
+    }
+  ]
+}
